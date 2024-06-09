@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+
+}
+@layer components {
+    li{
+        @apply w-3/4 bg-slate-200 m-2 rounded text-lg p-2 
+    }
+    li span{
+        @apply text-2xl p-2
+    }
+}
+@layer utilities {
+
+}
