@@ -554,41 +554,30 @@ video {
   --tw-contain-style:  ;
 }
 
-li {
-  margin: 0.5rem;
-  width: 75%;
+input {
+  width: 100%;
   border-radius: 0.25rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
   padding: 0.5rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-li span {
+li{
+  list-style: none;
+  width: 90%;
+  align-self: center;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
   padding: 0.5rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.fixed {
-  position: fixed;
-}
-
-.absolute {
-  position: absolute;
 }
 
 .relative {
   position: relative;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.m-auto {
-  margin: auto;
+.m-4 {
+  margin: 1rem;
 }
 
 .mx-auto {
@@ -596,49 +585,32 @@ li span {
   margin-right: auto;
 }
 
-.my-\[5rem\] {
+.mb-\[1rem\] {
+  margin-bottom: 1rem;
+}
+
+.mt-\[5rem\] {
   margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 .flex {
   display: flex;
 }
 
-.list-item {
-  display: list-item;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-48 {
-  width: 12rem;
+.w-full {
+  width: 100%;
 }
 
 .max-w-lg {
   max-width: 32rem;
 }
 
-.max-w-md {
-  max-width: 28rem;
-}
-
 .flex-col {
   flex-direction: column;
+}
+
+.content-center {
+  align-content: center;
 }
 
 .items-center {
@@ -649,23 +621,27 @@ li span {
   justify-content: center;
 }
 
+.self-center {
+  align-self: center;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
 
-.bg-slate-400 {
+.bg-accent {
   --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+  background-color: rgb(255 192 203 / var(--tw-bg-opacity));
 }
 
-.bg-slate-700 {
+.bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+  background-color: rgb(250 128 114 / var(--tw-bg-opacity));
 }
 
-.bg-black {
+.bg-slate-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
 .p-2 {
@@ -674,6 +650,11 @@ li span {
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pb-\[5rem\] {
@@ -689,6 +670,15 @@ li span {
   line-height: 1.75rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .font-extrabold {
   font-weight: 800;
+}
+
+.text-text {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }

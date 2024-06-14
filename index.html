@@ -9,17 +9,32 @@
     <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
 </head>
 <body>
-    <div class="bg-slate-400 relative pb-[5rem] mx-auto my-[5rem] rounded max-w-lg p-3">
-    <h1 class="text-center text-xl font-extrabold p-2">TODO LIST</h1>
-        <ul class="flex items-center justify-center flex-col">
-            <!-- <li class="list-item"><span>+</span> Add list</li>
-            <li class="list-item">Add list</li> -->
-        </ul>
-        <!-- <div class="absolute bg-black w-48 h-40 mx-auto">
-            <textera></textera>
-        </div> -->
-        <div></div>
+    <div class="bg-primary relative min-h-lg mx-auto mt-[5rem] mb-[1rem] rounded max-w-lg p-3">
+    <h1 class="text-center w-full py-2 text-xl font-extrabold">TODO LIST</h1>
+        <div class="flex flex-col justify-center align-center content-center items-center ">
+            <form action="" class="w-full">
+                <label for="todo" class="font-bold text-md">Masukkan List
+                    <input type="text" id="todo" name="todo">
+                <label for="date" class="font-bold text-md">Masukkan List
+                    <input type="date" id="date" name="date">
+            </form>
+            <div class="flex justify-center m-4" >
+                <button type="submit" id="submit" class="bg-accent p-2 text-text rounded self-center">Submit</button>
+            </div>
+        </div>
     </div>
+
+    <section id="list" class="bg-primary relative min-h-lg pb-[5rem] mx-auto rounded max-w-lg p-3 flex flex-col justify-center align-center content-center">
+        <h1 class="text-center w-full py-2 text-xl font-extrabold">List</h1>
+  <!-- List Content -->
+  <ul id="todo-list" class="bg-slate-100"></ul> 
+<li >
+    <input type="checkbox" class="done-checkbox">
+    <span>${todoText}</span>
+    <span class="date">${todoDate}</span>
+    <button class="delete">Delete</button>
+</li>
+    </section>
 
 
 

@@ -6,12 +6,16 @@
 
 }
 @layer components {
+    input{
+        @apply w-[100%] rounded text-lg p-2 
+    }
     li{
-        @apply w-3/4 bg-slate-200 m-2 rounded text-lg p-2 
+        list-style: none;
     }
-    li span{
-        @apply text-2xl p-2
+    li{
+        @apply bg-slate-300 w-[90%]  self-center p-2 rounded
     }
+
 }
 @layer utilities {
 
